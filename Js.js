@@ -80,12 +80,15 @@ let appData = {
             appData.income = items.split(', ');
             appData.income.push(prompt("Что-то еще?"));
             appData.income.sort();
-            appData.income.forEach(function(item, i){
-                alert("Способы зароботка: " +(i+1) + "-" + item);
+            appData.income.forEach(function(kup, i){
+                alert("Способы зароботка: " +(i+1) + "-" + kup);
             });
         }
-
 };
+
+for( let app in appData){
+    console.log(appData[app]);
+}
 
 
 
