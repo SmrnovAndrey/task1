@@ -1,6 +1,6 @@
 'use strict';
 
-let money,
+/*let money,
     time;
 
     function start() {
@@ -10,7 +10,7 @@ let money,
             money = +prompt("Ваш бюджет на месяц?", '');
         }
     }
-start();
+//start();
 
 let appData = {
         budget : money,
@@ -58,7 +58,8 @@ let appData = {
                 console.log ("Это высокий уровень достатка!");
             } else {
                 console.log ("Произошла ошибка");
-            }
+           
+ }
         },
         chooseOptExpenses: function () {                            
 
@@ -77,8 +78,10 @@ let appData = {
                 alert("Вы ввели не буквенные значения или оставили строчку пустой");
                 items = prompt("Что принесет доп доход?( перечислите через запятую)",'');
             }
-            appData.income = items.split(', ');
-            appData.income.push(prompt("Что-то еще?"));
+            appData.income = items.split(',');
+            console.log(appData.income);
+            appData.income.push(prompt("Что-то еще?",''));
+            console.log(appData.income);
             appData.income.sort();
             appData.income.forEach(function(kup, i){
                 alert("Способы зароботка: " +(i+1) + "-" + kup);
@@ -90,6 +93,16 @@ for( let app in appData){
     console.log(appData[app]);
 }
 
+appData.chooseIncome();*/
+
+
+let box = document.getElementById('box'),
+    btn = document.getElementsByTagName('button'),
+    circle = document.getElementsByClassName('circle'),
+    heart = document.querySelectorAll('.wrapper .heart'),
+    oneHeart = document.querySelector('.heart');
+
+box.style.backgroundColor = 'blue';
 
 
 
